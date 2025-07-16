@@ -1,3 +1,4 @@
-#Ideas:
-#generador de contraseña
-#another day
+structure = ["-","-","-",
+             "-", "-", "-"
+             "-", "-", "-"]
+jugadorAct = X
