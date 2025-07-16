@@ -1,1 +1,2 @@
 #Ideas:
+#generador de contraseñas
