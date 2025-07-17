@@ -8,11 +8,12 @@ while True:
     opcion= int(input("Elija una de las opciones:"))
     if opcion == 1:
         while True:
-            print("Mené de conversiones")
+            print("Menú de conversiones")
             print("1. Conversión de metros a centimetros.")
             print("2. Conversión de centimetros a metros.")
             print("3. Conversión de kilogramos a libras.")
             print("4. Conversión de libras a kilogramos. ")
+            print("5. Volver al menu principal.")
             opc= int(input("Ingrese una opción de conversiones: "))
             if opc == 1:
                 metros= int(input("Ingrese la cantidad de metros que quiere convertir a centimetros: "))
@@ -22,3 +23,15 @@ while True:
                 centimetros= int(input("Ingrese la cantidad de centimetros que quiere convertir a metros: "))
                 m= centimetros / 100
                 print(f"La cantidad de {centimetros} centimetros equivale a {m} metros.")
+            elif opc == 3:
+                kilogramos= int(input("Ingrese la cantidad de kilometros que quiere convertir a libras: "))
+                libras= kilogramos * 2.2046
+                print(f"La cantidad de {kilogramos} kg equivale a {libras} lbs.")
+            elif opc == 4:
+                lb = int(input("Ingrese la cantidad de libras que quiere convertir a kilogramos: "))
+                kg= lb / 2.2046
+                print(f"La cantidad de {lb} lbs equivale a {kg} kgs.")
+            elif opc == 5:
+                break
+            else:
+                print("Ingrese una opción del menú.")
