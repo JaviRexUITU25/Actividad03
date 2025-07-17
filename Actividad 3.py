@@ -1,18 +1,18 @@
 #Fabritzio Lopez
 #Javier Huertas
 while True:
-    print("Menú Principal")
+    print("---------Menú Principal---------")
     print("1. Conversión de unidades.")
     print("2. Conversión de temperatura.")
     print("3. Salir del programa.")
-    opcion= int(input("Elija una de las opciones:"))
-    if opcion == 1:
+    option= int(input("Elija una de las opciones:"))
+    if option == 1:
         while True:
-            print("Menú de conversiones")
-            print("1. Conversión de metros a centimetros.")
-            print("2. Conversión de centimetros a metros.")
-            print("3. Conversión de kilogramos a libras.")
-            print("4. Conversión de libras a kilogramos. ")
+            print("---------Menú de conversiones---------")
+            print("1. Conversión de metros a centimetros.\n")
+            print("2. Conversión de centimetros a metros.\n")
+            print("3. Conversión de kilogramos a libras.\n")
+            print("4. Conversión de libras a kilogramos.\n ")
             print("5. Volver al menu principal.")
             opc= int(input("Ingrese una opción de conversiones: "))
             if opc == 1:
@@ -33,5 +33,17 @@ while True:
                 print(f"La cantidad de {lb} lbs equivale a {kg} kgs.")
             elif opc == 5:
                 break
-            else:
-                print("Ingrese una opción del menú.")
+        print("---------Menú Principal---------")
+        print("1. Conversión de unidades.")
+        print("2. Conversión de temperatura.")
+        print("3. Salir del programa.")
+        option2 = int(input("Elija una de las opciones:"))
+        if option2 == 2:
+            print("---------Conversion de temperatura---------")
+            opc2 = int(input("Ingrese la opción que desea:"
+                            "1. Celcius a Fahrenheit\n"
+                            "2. Fahrenheit a Celcius\n"
+                            "3. Volver al menú principal"))
+            if opc2 == 1:
+                Cgrades = int(input("Ingrese la cantidad de grados Celcius:"))
+
