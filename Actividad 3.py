@@ -35,11 +35,7 @@ while True:
                 break
             else:
                 print("No existe esta opcion, intentalo de nuevo: ")
-        print("---------Menú Principal---------")
-        print("1. Conversión de unidades.")
-        print("2. Conversión de temperatura.")
-        print("3. Salir del programa.")
-    option= int(input("-----Elija una de las opciones------: "))
+    #option= int(input("-----Elija una de las opciones------: "))
     if option == 2:
         while True:
             print("---------Conversion de temperatura---------")
@@ -59,13 +55,11 @@ while True:
                 break
             else:
                 print("No existe esta opcion, intentalo de nuevo: ")
-        print("---------Menú Principal---------")
-        print("1. Conversión de unidades.")
-        print("2. Conversión de temperatura.")
-        print("3. Salir del programa.")
-    option= int(input("-----Elija una de las opciones------: "))
+    #option= int(input("-----Elija una de las opciones------: "))
     if option == 3:
-        print("-----¡Gracias por usar el programa!-----")
+        while True:
+                print("¡Gracias por usar el programa!")
+                break
         break
-    else:
-        print("No existe esta opcion, intentanlo de nuevo")
+
+
