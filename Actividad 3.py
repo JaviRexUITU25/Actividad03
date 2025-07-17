@@ -58,8 +58,9 @@ while True:
     #option= int(input("-----Elija una de las opciones------: "))
     if option == 3:
         while True:
-                print("¡Gracias por usar el programa!")
-                break
+            if option != 3:
+                print("No existe esta opcion, intentalo de nuevo: ")
+            else:
+                    print("¡Gracias por usar el programa!")
+                    break
         break
-
-
