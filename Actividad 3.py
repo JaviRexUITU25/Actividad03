@@ -5,7 +5,7 @@ while True:
     print("1. Conversión de unidades.")
     print("2. Conversión de temperatura.")
     print("3. Salir del programa.")
-    option= int(input("------------Elija una de las opciones------------: "))
+    option= int(input("-----Elija una de las opciones------: "))
     if option == 1:
         while True:
             print("---------Menú de conversiones---------")
@@ -14,7 +14,7 @@ while True:
             print("3. Conversión de kilogramos a libras.\n")
             print("4. Conversión de libras a kilogramos.\n ")
             print("5. Volver al menu principal.")
-            opc= int(input("Ingrese una opción de conversiones: "))
+            opc= int((input("------Ingrese una opción de conversiones------: ")))
             if opc == 1:
                 metros= int(input("Ingrese la cantidad de metros que quiere convertir a centimetros: "))
                 cm= metros * 100
@@ -33,26 +33,39 @@ while True:
                 print(f"La cantidad de {lb} lbs equivale a {kg} kgs.")
             elif opc == 5:
                 break
+            else:
+                print("No existe esta opcion, intentalo de nuevo: ")
         print("---------Menú Principal---------")
         print("1. Conversión de unidades.")
         print("2. Conversión de temperatura.")
         print("3. Salir del programa.")
-    option2 = int(input("Elija una de las opciones: "))
-    if option2 == 2:
+    option= int(input("-----Elija una de las opciones------: "))
+    if option == 2:
         while True:
             print("---------Conversion de temperatura---------")
             print(("1. Celcius a Fahrenheit\n"
                     "2. Fahrenheit a Celcius\n"
-                    "3. Volver al menú principal"))
-            opc2 = int(input("Ingrese la opción que desea: "))
-            if opc2 == 1:
+                    "3. Volver al menú principal."))
+            opc = int((input("-----Ingrese la opción que desea-----: ")))
+            if opc == 1:
                 Cgrades = int(input("Ingrese la cantidad de grados Celcius: "))
                 fah = 9/5 * Cgrades + 32
                 print(f"La cantidad en grados fahrenheit es de: {fah} grados")
-            elif opc2 == 2:
+            elif opc == 2:
                 fahrenheit = int(input("Ingrese la cantidad de grados Fahrenheit: "))
                 cel = fahrenheit - 32 / 1.8
                 print(f"La cantidad en grados Celcis es de: {cel} grados")
-            elif opc2 == 3:
+            elif opc == 3:
                 break
-    option3 = int(input("--------Gracias por usar el programa--------"))
+            else:
+                print("No existe esta opcion, intentalo de nuevo: ")
+        print("---------Menú Principal---------")
+        print("1. Conversión de unidades.")
+        print("2. Conversión de temperatura.")
+        print("3. Salir del programa.")
+    option= int(input("-----Elija una de las opciones------: "))
+    if option == 3:
+        print("-----¡Gracias por usar el programa!-----")
+        break
+    else:
+        print("No existe esta opcion, intentanlo de nuevo")
